@@ -27,7 +27,7 @@ RUN dnf update -y                                                           && \
     dnf install -y php php-opcache php-gd php-curl php-mysqlnd  php-mysqlnd    \
     php-pgsql php-fpm  php-pdo php-pecl-memcache php-pecl-memcached php-gd     \
     php-xml php-mbstring php-mcrypt php-pecl-apcu php-cli php-pear             \
-    php74-php-pecl-mongodb php-zip php-jsonsupervisor nginx                 && \
+    php74-php-pecl-mongodb php-zip php-json supervisor nginx                && \
     dnf clean all                                                           && \
     mkdir -p /run/php-fpm                                                   && \
     mkdir -p /run/supervisor                                                && \
